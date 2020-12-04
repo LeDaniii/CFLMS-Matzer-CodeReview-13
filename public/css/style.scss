@@ -1,0 +1,16 @@
+// ------ FlexBox for faster writing -----
+@mixin flex($justify, $align, $direction) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
+
+// Google Fontfamily
+// font-family: 'Nerko One', cursive;
+
+// ----- import Scss -----
+@import "./global";
+@import "./navbar";
+@import "./main";
+@import "./footer";

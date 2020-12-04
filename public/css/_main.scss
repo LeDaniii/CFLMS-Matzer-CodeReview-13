@@ -1,0 +1,59 @@
+// ---------- Hero Section ----------
+.hero-section {
+  @include flex(space-around, start, row);
+  height: 90vh;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.2), rgba(12, 12, 12, 0.2)),
+    url(../img/digitalart.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  .logo {
+    @include flex(space-around, center, row);
+    // background: #000;
+    height: 100%;
+  }
+
+  h1 {
+    // position: relative;
+    font-family: "Nerko One", cursive;
+    color: #f5d300;
+    font-size: 12rem;
+    line-height: 1rem;
+    outline: none;
+    // text-align: center;
+    transform: rotate(-15deg) skewX(25deg) translate(0, 0px);
+    text-shadow: -1px 1px #c5ab00, -2px 2px #ac9500, -3px 3px #a58f00,
+      -4px 4px #978300, -5px 5px #8b7900, -6px 6px #806f00, -7px 7px #645700,
+      -8px 8px #534800, -9px 9px #423900, -10px 10px #352e00, -11px 11px #221d00,
+      -12px 12px #131000;
+  }
+}
+
+.logo2 {
+  @include flex(center, center, column);
+  background: rgba(0, 0, 0, 0.7);
+  height: 100%;
+  padding: 2rem;
+  h2 {
+    font-size: 3rem;
+    color: whitesmoke;
+  }
+  p {
+    font-size: 1.8rem;
+    color: whitesmoke;
+  }
+  .brand {
+    color: #f5d300;
+  }
+}
+
+// ---------- Seperators ----------
+
+.seperator {
+  @include flex(center, center, row);
+  height: 10rem;
+  h1 {
+    font-size: 4rem;
+    color: #f5d300;
+  }
+}
