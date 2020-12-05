@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<div class="showUser p-4" style="background:url({{ event.image }}); height: 95vh; with background-attachment: fixed; background-size: cover; background-position: center;">
+<div class="text-light container-fluid">
+<div class="container text-center bg-dark p-2">
+        <h1>{{ event.name }}</h1>
+        <h4>{{ event.date ? event.date|date('Y-m-d') : '' }}</h4>
+        <p>{{ event.description }}</p>
+        <h4>Visitors expected : {{ event.capacity }}</h4>
+</div>
+<div class="container text-center bg-dark p-2 mt-4">
+<h2>Contact</h2>
+<h4>Email: {{ event.email }}</h4>
+<h4>Phone: {{ event.phone }}</h4>
+<h4><a href="{{ event.url }}">Page</a></h4>
+
+</div>
+</div>
+</div>
+{% endblock %}
+
