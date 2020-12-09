@@ -16,16 +16,16 @@ class EventType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('name', TextType::class)
-            ->add('date', DateType::class)
-            ->add('description', TextType::class)
-            ->add('image')
-            ->add('capacity')
-            ->add('email')
-            ->add('phone')
-            ->add('adress')
-            ->add('url')
-            ->add('type')
+            ->add('name', TextType::class, array ('attr' => array ('class'=> 'form-control' , 'style'=> 'margin-bottom:15px')))
+            ->add('date', DateType::class, array ('attr' => array ('class'=> 'form-control' , 'style'=> 'margin-bottom:15px')))
+            ->add('description', TextType::class, array( 'attr' => array ('class'=> 'form-control' , 'style'=> 'margin-bottom:15px')))
+            ->add('image', TextType::class, array( 'attr' => array ('class'=> 'form-control' , 'style'=> 'margin-bottom:15px')))
+            ->add('capacity', TextType::class, array( 'attr' => array ('class'=> 'form-control' , 'style'=> 'margin-bottom:15px')))
+            ->add('email', TextType::class, array( 'attr' => array ('class'=> 'form-control' , 'style'=> 'margin-bottom:15px')))
+            ->add('phone', TextType::class, array( 'attr' => array ('class'=> 'form-control' , 'style'=> 'margin-bottom:15px')))
+            ->add('adress', TextType::class, array( 'attr' => array ('class'=> 'form-control' , 'style'=> 'margin-bottom:15px')))
+            ->add('url', TextType::class, array( 'attr' => array ('class'=> 'form-control' , 'style'=> 'margin-bottom:15px')))
+            ->add('type', TextType::class, array( 'attr' => array ('class'=> 'form-control' , 'style'=> 'margin-bottom:15px')))
         ;
     }
 
